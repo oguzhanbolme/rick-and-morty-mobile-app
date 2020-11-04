@@ -1,0 +1,19 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Rick and Morty Episodes"></ActionBar>
+
+    <StackLayout class="p-20">
+        <ListView items="{{ episodes }}"
+            itemTap="onItemTap" 
+            loaded="{{ onListViewLoaded }}" 
+            separatorColor="black" rowHeight="100"
+            class="list-group" id="listView">
+            <ListView.itemTemplate>
+                <StackLayout class="list-group-item" padding="5" id="{{id}}">
+                    <Label textAlignment="left" fontWeight="bold" text="{{ episode || 'Downloading...' }}" textWrap="true" class="title" />
+                    <Label textAlignment="center" fontWeight="bold" text="{{ name || 'Downloading...' }}" textWrap="true" class="title" />
+                    <Label textAlignment="center" text="{{ air_date || 'Downloading...' }}" textWrap="true" class="title" />
+                </StackLayout>
+            </ListView.itemTemplate>
+        </ListView>
+    </StackLayout>
+</Page>

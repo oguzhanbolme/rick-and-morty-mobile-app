@@ -1,0 +1,17 @@
+import * as layout from './layout-helper';
+export { layout };
+export * from './mainthread-helper';
+export declare const RESOURCE_PREFIX = "res://";
+export declare const FILE_PREFIX = "file:///";
+export declare function escapeRegexSymbols(source: string): string;
+export declare function convertString(value: any): any;
+export declare function getModuleName(path: string): string;
+export declare function isFileOrResourcePath(path: string): boolean;
+export declare function isFontIconURI(uri: string): boolean;
+export declare function isDataURI(uri: string): boolean;
+export declare function mergeSort(arr: any, compareFunc: any): any;
+export declare function merge(left: any, right: any, compareFunc: any): any[];
+export declare function hasDuplicates(arr: Array<any>): boolean;
+export declare function eliminateDuplicates(arr: Array<any>): Array<any>;
+export declare function executeOnMainThread(func: Function): any;
+export declare function mainThreadify(func: Function): (...args: any[]) => void;

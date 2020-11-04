@@ -1,0 +1,11 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Character Details"></ActionBar>
+
+    <FlexboxLayout flexDirection="column" justifyContent="center" alignItems="center">
+        <Image id="photo" src="" width="150" height="150" />
+        <Label id="name" fontSize="20" fontWeight="bold" text="name" textWrap="true" class="title" />
+        <Label id="status" fontSize="20" fontWeight="bold" text="status" textWrap="true" class="title" />
+        <Label id="species" fontSize="20" fontWeight="bold" text="species" textWrap="true" class="title" />
+        <Label id="gender" fontSize="20" fontWeight="bold" text="gender" textWrap="true" class="title" />
+  </FlexboxLayout>
+</Page>
