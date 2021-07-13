@@ -1,5 +1,7 @@
-# NativeScript Template
-*.js.map
+# NativeScript
+hooks/
+node_modules/
+platforms/
 
 # Logs
 logs
